@@ -1,0 +1,144 @@
+* {
+  margin: 10PX;
+  padding: PX;
+  box-sizing: border-box;
+}
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #F0F0F0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .fondo {
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%; /* ancho del 100% */
+  }
+  
+  .fondo img {
+    width: 100%; /* ancho del 100% */
+    max-height: 100%; 
+    object-fit: cover;
+  }
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #e0e0e0;
+	color: #1d1d1d;
+	display: auto;
+	justify-content: center;
+}
+.index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index input[type="text"] {
+  text-align: center;
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+}
+
+.index button {
+  background-color: blue;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+.top button {
+	background-color: blue;
+	color: white;
+	border-radius: 50px;
+	border: none;
+	padding: 10px 20px;
+	margin: 0 10px;
+  }
+.top
+.opciones {
+	background-color: blue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+  
+  }
+.contenedor {
+	
+	width: 90%;
+  max-width: 1000px;
+  margin: 40px auto 100px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.contenedor .pelicula {
+  text-align: center;
+}
+
+.contenedor .pelicula .titulo {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contenedor .pelicula .poster {
+  width: fit-content;
+  max-width: 100%;
+  max-height: 300px;
+  margin: 0 auto 10px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 2px solid black;
+}
+
+
+.contenedor .pelicula .poster:hover {
+  transform: scale(0.9);
+}
+.contenedor .pelicula.center {
+  justify-self: center;
+}
+
+.imagen-container {
+  position: relative;
+  display: inline-block;
+}
+
+.resumen {
+  display: none;
+  width: 400px;
+  position: absolute;
+  top: 0;
+  left: calc(100% + 10px);
+  padding: 40px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px gray;
+  z-index: 1;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.imagen-container:hover .resumen {
+  display: block;
+}
